@@ -59,6 +59,7 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260328-osk | Add INTL-07, BILD-09 requirements and annotate INTL-02 with file-context routing | 2026-03-28 | 3dee5c2 | [260328-osk](./quick/260328-osk-add-intl-07-bild-09-requirements-and-ann/) |
+| 260328-p1t | Annotate INTL-04 with EverMemOS HNSW quantized vector storage note (TurboQuant) | 2026-03-28 | f5b04d0 | [260328-p1t](./quick/260328-p1t-annotate-intl-04-in-requirements-md-with/) |
 
 ## Session Continuity
 
