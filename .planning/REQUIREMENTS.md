@@ -38,7 +38,7 @@ Requirements for Milestone 1 (Foundation → Core Pipeline). Each maps to roadma
 - [ ] **INTL-01**: Flow Engine provides a unified TypeScript interface over Ruflo, DeerFlow, Scion, and EverMemOS
 - [ ] **INTL-02**: Ruflo adapter routes tasks to the best-suited agent using neural routing; routing passes file-type context (TypeScript / Python / Rust / YAML) to the Builder agent so it receives language-specific instruction profiles
 - [ ] **INTL-03**: Ruflo's Guidance Control Plane enforces 7-layer policy gates that agents cannot bypass
-- [ ] **INTL-04**: EverMemOS adapter stores and recalls structured memory (MemCells) across sessions
+- [ ] **INTL-04**: EverMemOS adapter stores and recalls structured memory (MemCells) across sessions; HNSW index must use quantized vector storage (PQ/SQ compression) to reduce MemCell memory footprint and speed similarity recall — validate configuration preserves recall accuracy (target ≥ 90%)
 - [ ] **INTL-05**: Agent coordination protocol enforces hierarchical authority (Architect agent is authoritative) with explicit state machine transitions
 - [ ] **INTL-06**: Model flexibility — user can select between OpenAI, Anthropic, and Google models for agent execution
 - [ ] **INTL-07**: Each swarm agent has an explicit capability manifest defining allowed tools, write access scope, and prohibited actions — Architect: read-all + write architecture docs only; Builder: write code + run tests, no merge-to-main; Security: read-all + run scanners, no write code; QA: write tests + run suite, no modify source
