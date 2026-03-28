@@ -36,11 +36,12 @@ Requirements for Milestone 1 (Foundation → Core Pipeline). Each maps to roadma
 ### Intelligence Layer
 
 - [ ] **INTL-01**: Flow Engine provides a unified TypeScript interface over Ruflo, DeerFlow, Scion, and EverMemOS
-- [ ] **INTL-02**: Ruflo adapter routes tasks to the best-suited agent using neural routing
+- [ ] **INTL-02**: Ruflo adapter routes tasks to the best-suited agent using neural routing; routing passes file-type context (TypeScript / Python / Rust / YAML) to the Builder agent so it receives language-specific instruction profiles
 - [ ] **INTL-03**: Ruflo's Guidance Control Plane enforces 7-layer policy gates that agents cannot bypass
 - [ ] **INTL-04**: EverMemOS adapter stores and recalls structured memory (MemCells) across sessions
 - [ ] **INTL-05**: Agent coordination protocol enforces hierarchical authority (Architect agent is authoritative) with explicit state machine transitions
 - [ ] **INTL-06**: Model flexibility — user can select between OpenAI, Anthropic, and Google models for agent execution
+- [ ] **INTL-07**: Each swarm agent has an explicit capability manifest defining allowed tools, write access scope, and prohibited actions — Architect: read-all + write architecture docs only; Builder: write code + run tests, no merge-to-main; Security: read-all + run scanners, no write code; QA: write tests + run suite, no modify source
 
 ### Studio I — Product Requirements
 
@@ -68,6 +69,7 @@ Requirements for Milestone 1 (Foundation → Core Pipeline). Each maps to roadma
 - [ ] **BILD-06**: Test runner executes unit and integration tests and reports results inline
 - [ ] **BILD-07**: Error detection loop: agents detect test/build failures and auto-fix without user intervention
 - [ ] **BILD-08**: Code editor (Monaco) displays generated code with syntax highlighting and diff view
+- [ ] **BILD-09**: Architect agent creates and maintains CONVENTIONS.md in the target repo at each checkpoint — captures naming patterns, framework choices, testing conventions; Builder agent reads CONVENTIONS.md before every code generation task
 
 ### Agent Swarm
 
@@ -181,6 +183,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INTL-04 | Phase 4 | Pending |
 | INTL-05 | Phase 4 | Pending |
 | INTL-06 | Phase 4 | Pending |
+| INTL-07 | Phase 4 | Pending |
 | PRD-01 | Phase 5 | Pending |
 | PRD-02 | Phase 5 | Pending |
 | PRD-03 | Phase 5 | Pending |
@@ -199,6 +202,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | BILD-06 | Phase 5 | Pending |
 | BILD-07 | Phase 5 | Pending |
 | BILD-08 | Phase 5 | Pending |
+| BILD-09 | Phase 5 | Pending |
 | AGNT-01 | Phase 5 | Pending |
 | AGNT-02 | Phase 5 | Pending |
 | AGNT-03 | Phase 5 | Pending |
@@ -214,8 +218,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AUTH-03 | Phase 6 | Pending |
 
 **Coverage:**
-- v1 requirements: 54 total
-- Mapped to phases: 54
+- v1 requirements: 56 total
+- Mapped to phases: 56
 - Unmapped: 0
 
 ---

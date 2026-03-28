@@ -76,7 +76,7 @@ Plans:
 ### Phase 4: Intelligence Layer
 **Goal**: A unified Flow Engine routes tasks to agents, enforces policy gates, persists memory across sessions, and coordinates agent behavior through an authoritative protocol
 **Depends on**: Phase 1 (parallel with Phase 3 -- no Docker/git dependency)
-**Requirements**: INTL-01, INTL-02, INTL-03, INTL-04, INTL-05, INTL-06
+**Requirements**: INTL-01, INTL-02, INTL-03, INTL-04, INTL-05, INTL-06, INTL-07
 **Success Criteria** (what must be TRUE):
   1. Flow Engine exposes a single TypeScript interface that abstracts Ruflo, DeerFlow, Scion, and EverMemOS
   2. Tasks are routed to the best-suited agent via Ruflo's neural routing, and the user can select between OpenAI, Anthropic, and Google models
@@ -93,7 +93,7 @@ Plans:
 ### Phase 5: Connected Studios
 **Goal**: Users can describe what they want to build, the system plans it, and agents build it into a connected GitHub repo with real working code -- the complete golden path
 **Depends on**: Phase 3, Phase 4
-**Requirements**: PRD-01, PRD-02, PRD-03, PRD-04, PLAN-01, PLAN-02, PLAN-03, PLAN-04, PLAN-05, PLAN-06, BILD-01, BILD-02, BILD-03, BILD-04, BILD-05, BILD-06, BILD-07, BILD-08, AGNT-01, AGNT-02, AGNT-03, AGNT-04, AGNT-05, AGNT-06, GIT-01, GIT-02, GIT-03, GIT-04
+**Requirements**: PRD-01, PRD-02, PRD-03, PRD-04, PLAN-01, PLAN-02, PLAN-03, PLAN-04, PLAN-05, PLAN-06, BILD-01, BILD-02, BILD-03, BILD-04, BILD-05, BILD-06, BILD-07, BILD-08, BILD-09, AGNT-01, AGNT-02, AGNT-03, AGNT-04, AGNT-05, AGNT-06, GIT-01, GIT-02, GIT-03, GIT-04
 **Success Criteria** (what must be TRUE):
   1. User completes the PRD wizard and produces a structured requirements document that can be edited and re-run
   2. User connects a GitHub repo, the system verifies access, and a build plan is generated from the PRD for user review and approval
