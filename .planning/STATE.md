@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 Phase: 1 of 6 (Foundation and Shell)
 Plan: 0 of 3 in current phase
 Status: Ready to plan
-Last activity: 2026-03-28 -- Roadmap created with 6 phases covering 50 requirements
+Last activity: 2026-03-28 - Completed quick task 260328-osk: Add INTL-07, BILD-09 requirements and annotate INTL-02
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -53,6 +53,12 @@ None yet.
 ### Blockers/Concerns
 
 None yet.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260328-osk | Add INTL-07, BILD-09 requirements and annotate INTL-02 with file-context routing | 2026-03-28 | 3dee5c2 | [260328-osk](./quick/260328-osk-add-intl-07-bild-09-requirements-and-ann/) |
 
 ## Session Continuity
 
