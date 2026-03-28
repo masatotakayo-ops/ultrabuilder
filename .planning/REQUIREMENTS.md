@@ -214,10 +214,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AUTH-03 | Phase 6 | Pending |
 
 **Coverage:**
-- v1 requirements: 50 total
-- Mapped to phases: 50
-- Unmapped: 0 ✓
+- v1 requirements: 54 total
+- Mapped to phases: 54
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-28*
-*Last updated: 2026-03-28 after initial definition*
+*Last updated: 2026-03-28 after roadmap creation*
