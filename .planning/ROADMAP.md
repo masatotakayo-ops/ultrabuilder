@@ -31,12 +31,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Monorepo builds all packages successfully with a single command
   4. CI pipeline runs and passes on all three OS targets
   5. Frontend can invoke Rust commands, receive streaming data via Channels, and react to lifecycle Events
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
-- [ ] 01-03: TBD
+- [ ] 01-01-PLAN.md -- Monorepo scaffold (Turborepo, pnpm, packages/shared, Biome)
+- [ ] 01-02-PLAN.md -- Tauri app + React shell (VS Code layout, titlebar, menu, router, theme, fonts)
+- [ ] 01-03-PLAN.md -- SQLite + Drizzle proxy + Projects CRUD (schema, migrations, run_sql, UI)
+- [ ] 01-04-PLAN.md -- IPC layer proof (Channels log streaming, Events lifecycle, IPC debug panel)
+- [ ] 01-05-PLAN.md -- CI pipeline (GitHub Actions matrix, Vitest setup, Tauri IPC mocks)
 
 ### Phase 2: Sidecar Infrastructure
 **Goal**: DeerFlow and Scion run as reliable, supervised sidecar processes that start with the app, recover from crashes, and shut down cleanly
@@ -128,7 +130,7 @@ Note: Phase 3 and Phase 4 can execute in parallel (intelligence layer has no Doc
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Shell | 0/3 | Not started | - |
+| 1. Foundation and Shell | 0/5 | Planning complete | - |
 | 2. Sidecar Infrastructure | 0/3 | Not started | - |
 | 3. Execution Environment | 0/3 | Not started | - |
 | 4. Intelligence Layer | 0/3 | Not started | - |
